@@ -1,0 +1,2160 @@
+/*
+Theme Name: Brick Child
+Theme URI: http://demo.select-themes.com/brick/
+Description: A child theme of Brick Theme
+Author: Select Themes
+Author URI: http://select-themes.com
+Version: 1.0.0
+Template: brick
+*/
+@import url("../brick/style.css");
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 55px !important;
+    text-align: center !important;
+    font-family: 'Open Sans' !important;
+    color: #a00924 !important;
+    font-weight: 300 !important;
+    padding-bottom: 20px !important;
+}
+h3, h3 a {
+    color: #A00924;
+    text-transform: none;
+}
+
+/******** HEADER *********/
+
+.vertical_area_background {
+
+	
+}
+
+.vertical_logo_wrapper {
+
+}
+
+.q_logo_vertical {
+	height: 70px !important;
+}
+
+nav.vertical_menu>ul>li>a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.vertical_menu ul li a:hover, a, p a,
+.blog_holder article .post_info a,
+.comment_holder .comment .text .comment_date,
+.comment_holder .comment .text .replay, 
+.comment_holder .comment .text .comment-reply-link, 
+.comment_holder .comment .text .comment-edit-link,
+.comment-list .post_author_comment .post-author-comment-icon,
+div.comment_form form p.logged-in-as a {
+
+	color:#A51B34;
+}
+.qbutton, .load_more a, 
+.blog_load_more_button a, 
+#submit_comment, 
+input.wpcf7-form-control.wpcf7-submit, 
+.post-password-form input[type='submit'] {
+    color: #A51B34;
+    border: #A51B34 solid 3px;
+    background-color: white;
+}
+
+.q_icon_shortcode>a>span:not(.icon_animation_bckg_change) {
+	color: #A51B34 !important;
+}
+
+::selection {
+	background: #A51B34;
+}
+
+.home .container_inner.default_template_holder,
+.content .content_inner > .container > .container_inner.default_template_holder {
+	padding-top: 0 !important;
+}
+
+.tag .container_inner.default_template_holder,
+.search .content .container_inner.default_template_holder {
+	margin-top: 30px;
+}
+
+.tag .blog_holder article h2 a {
+	color: #A51B34;
+}
+
+img {
+	font-size: 0 !important;
+}
+.product_category-dailys,
+section.parallax_section_holder {
+	line-height: 23px;
+}
+
+#post-51010 .product-logo {
+	margin: auto;
+}
+
+.post-50968 .product-logo {
+	width: 190px;
+	margin-top: 15px;
+}
+
+.post-50976 .product-logo {
+	width: 190px;
+}
+
+/*********** SLIDER ************/
+
+.carousel-inner .item .image {
+	background-position: center bottom;
+}
+
+
+.home .q_slide_text {
+	letter-spacing: 4px !important;
+}
+
+/*********** HOME PAGE ***********/
+div.section {
+	z-index: 99;
+}
+div.image {
+	background: none !important;
+}
+.heading {
+	font-size: 60px;
+	color: #a00924;
+	text-align: center;
+	font-weight: 300;
+}
+.slider1 {
+	background-size: 100%;
+}
+
+.three-logos {
+	overflow: hidden;
+}
+
+.three-logos div {
+	display: inline-block;
+	width: 24.6%;
+	vertical-align: middle;
+}
+
+.three-logos div img {
+	width: auto;
+    margin: auto;
+    max-width: 170px;
+}
+
+.pt {
+	font-size: 18px;
+	text-align: center;
+}
+.hpb a {
+	vertical-align: top;
+}
+
+.hpb .pt {
+	padding: 0 15px;
+}
+
+.hpb .holder {
+	height: 178px;
+	position: relative;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 200px;
+}
+
+.hpb .holder img {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.hpb h3 {
+	color: #A00924;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.hpb .column1 .holder {
+
+}
+.hpb .column2 .holder {
+	
+}
+.hpb .column3 .holder {
+	
+}
+
+.first .column2 .prd-logo {
+	top: 30px;
+}
+
+.first .prd {
+	height: 150px;
+}
+
+.third .column1 .prd-logo {
+	top: 47px;
+}
+
+.home .column2 img {
+	top:40px;
+	width: 100%;
+}
+
+
+.learn-more {
+	padding: 20px;
+	color:#fff;
+	background:#A00924;
+	display: inline-block;
+	line-height: 0;
+	font-weight: 800;
+}
+
+.home .learn-more {
+	margin-top: 60px;
+}
+
+.page-id-51056 .learn-more {
+	margin-top: 30px;
+	font-weight: 400;
+}
+
+.page-id-51056 .featured-image-holder {
+	margin-bottom: 0;
+}
+
+@media screen and (min-width: 800px){
+	.page-id-51056 .section_inner_margin {
+		width: 75%;
+		margin: auto !important;
+	}
+}
+
+
+
+.learn-more:hover {
+	color: #fff;
+    background: #393939!important;
+}
+#back_to_top > span {
+	background-color: #A00924;
+}
+#news-loop {
+	width:100%;
+	margin:auto;
+	margin-top: 45px;
+}
+
+#news-loop .pt {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#news-loop  .heading {
+	margin-bottom: 20px;
+}
+
+#news-loop h3 {
+	font-size: 18px;
+}
+
+
+#news-loop .wpb_text_column {
+	margin-bottom: 40px !important;
+}
+
+.post-holder {
+	
+}
+
+
+.post-holder:nth-child(odd) {
+	background: #ededed;
+}
+
+.thumbnail-holder {
+	display: block;
+	width: 15%;
+	height: 75px;
+	text-align: center;
+	float: left;
+	display: inline-block;
+}
+.thumbnail-holder img {
+	margin-top: 20px;
+	height: 35px;
+    width: auto;
+}
+.category-news {
+	float: left;
+	display: inline-block;
+	width:79%;
+	margin-top: 0;
+}
+
+aside .separator {
+	margin-top: 0 !important;
+}
+
+/********** PRODUCT PAGES **********/
+
+.tax-product_category .container_inner {
+	width:100%;
+}
+
+.category-image-holder img {
+/*	display: none; */
+	width: 100%;
+}
+
+.category-image-holder {
+	background-size: 100% ;
+}
+
+.product-header {
+	background-size: auto 100% !important;
+    background-repeat: repeat-x;
+}
+
+.product-logo-holder, .product-description {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px; 
+}
+
+.link-to-product img {
+	margin: 10px auto !important;
+}
+
+.product-logo-holder {
+	margin: 0;
+	width: 35%;
+	border-right: 1px solid rgba(255, 255, 255, 0.5);
+	padding-right: 20px;
+}
+.product-logo-holder img {
+	margin: auto;
+    display: block;
+}
+.product-description {
+    width: 61%;
+    padding-left: 20px;
+    /*border-left: 1px solid rgba(255, 255, 255, 0.5);*/
+/*    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 25px 0px;*/
+}
+.post-51399 .product-description{
+	border-color: #000;
+}
+.product-description h4, .product-description ul {
+	color: #fff;
+}
+
+.product-description h4 {
+	margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.product-description ul li {
+	font-size: 16px;
+	width: 45%;
+	float: left;
+	padding: 2px 10px;
+	list-style-position: outside;
+    margin-left: 9px;
+}
+.product-image-holder {
+	background-size: 100% !important;
+	background-repeat: no-repeat !important;
+}
+.product-image-holder img {
+	/*width: 100%;*/
+	max-width: 65%;
+    margin: 90px auto;
+    display: block;
+}
+/*Sunny D Image Sparklers*/
+
+.post-51466 .product-image-holder img {
+    /*max-width: 45% !important;*/
+}
+
+.small-print {
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+
+.small-print sup {
+	font-size: 50%;
+	bottom: 1.2ex;
+}
+
+.post-50994 .product-description,
+.post-50994 .product-description h4,
+.post-50994 .product-description ul,
+.post-50994 .product-description,
+.post-51000 .product-description,
+.post-51000 .product-description h4,
+.post-51000 .product-description ul,
+.post-51000 .product-description,
+.post-51004  .product-description h4,
+.post-51004  .product-description ul,
+.post-51004  .product-description,
+.post-50998  .product-description h4,
+.post-50998  .product-description ul,
+.post-50998  .product-description,
+.post-51081  .product-description ul  {
+	color: #000;
+	border-color: white;
+}
+
+.product-description ul {
+	padding-left: 10px;
+}
+
+.post-50990 .product-logo-holder img {
+	margin-top: 10px;
+}	
+
+.post-51081  .product-description {
+	border-color: #fff;
+}
+
+
+
+.post-51000 .product-header {
+	background-size: cover !important;
+}
+
+.page-id-51029 .learn-more {
+	margin: 60px auto;
+}
+
+
+
+/******** BRANDS ********/
+
+.wp-image-51076 {
+	width: 100%;
+}
+.bs1, .bs2, .bs3, .bs4 {
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+
+.page-id-51056 .header-title {
+	width: auto;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.page-id-51056 .holder .prd {
+	display: none;
+}
+
+.page-id-51056 .holder:hover .prd-logo {
+	display: none;
+}
+
+.page-id-51056 .holder:hover .prd {
+	display: block;
+	margin: auto;
+}
+
+.dailys-link {
+	display: none;
+}
+
+.term-dailys .category-image-holder {
+	position: relative;
+}
+
+
+.term-dailys h4, .term-veryfine .product-description {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.term-dailys .dailys-link {
+	display: block;
+	width: auto;
+    position: absolute;
+	max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+left: 0;
+    bottom: 0;
+}
+.term-dailys .dailys-link img {visibility:hidden;}
+
+
+}
+
+
+
+@media screen and (max-width:1500px) {
+	
+}
+
+@media screen and (max-width: 1280px) {
+	
+}
+
+@media screen and (max-width: 590px) {
+	
+}
+
+@media screen and (max-width: 320px) {
+	
+}
+
+
+@media screen and (min-width: 600px) {
+	div.two_columns_50_50 {
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.page-id-51056 .header-title {
+		margin-left: 41px;
+		top: 30%;
+	}
+	.bs3 {
+		letter-spacing: 2px;
+	}
+	.bs4 {
+		letter-spacing: 5px;
+	}
+	.product-description ul li {
+		width: 48%;
+	}
+}
+
+.bs1, .bs3 {
+	font-size: 60px;
+}
+
+.bs2, .bs4 {
+	font-size: 50px;
+}
+
+.bs1, .bs2 {
+	font-weight: 700;
+}
+.bs3, .bs4 {
+	font-weight: 300;
+}
+
+/********** NEWS PAGE **********/
+.featured-image-holder img {
+	width: 100%;
+	height: auto;
+}
+.featured-image-holder {
+	margin-bottom: 30px;
+	position: relative;
+}
+ .post_image, .page-id-50895 .post_info {
+	display: none !important;
+}
+.page-id-50895 h2 {
+	font-size: 25px !important;
+	line-height: 30px !important ;
+	
+}
+
+.qbutton.small {
+	margin-top: 10px;
+}
+
+.page-id-50895 h2 a {
+	color: #A00924 !important;
+	text-transform: none;
+}
+
+
+.single .social_share_list_holder, 
+.single #comments, .single .comment_form,
+.single .post_info {
+	display: none !important;
+}
+
+.single .content_left_from_sidebar {
+	margin-top: 30px;
+}
+.single .column2 {
+	margin-top: 30px;
+}
+
+.single h2, .date h2 a, .tag h2 a, .search h2 a {
+	color: #A00924 !important;
+	font-size: 25px !important;
+}
+.single h2, .date h2, .tag h2 {
+	line-height: 30px !important;
+}
+
+.single .blog_holder article h2,
+.date .blog_holder article h2,
+.tag .blog_holder article h2 {
+	line-height: 30px !important;
+}
+.page-id-51056 .section_inner, .full_width_inner {
+	margin-bottom: 40px !important;
+}
+
+.blog_holder.blog_single .single_tags {
+	margin-top: 0;
+}
+
+.blog_holder.blog_single article, .blog_holder.blog_single.blog_standard_type article {
+	margin-bottom: 40px !important;
+}
+
+.tags_text {
+	margin-bottom: 40px;
+}
+
+.post_excerpt {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.single article p {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.page-template-blog-standard .wpjb_widget,
+.page-template-blog-standard #wpjb-job-categories-2 {
+	display: none;
+}
+.page-template-blog-standard .sidebar #search-2,
+.page-template-blog-standard .sidebar #recent-comments-2,
+.page-template-blog-standard .sidebar #archives-2,
+.page-template-blog-standard .sidebar #categories-2,
+.page-template-blog-standard .sidebar #recent-posts-2,
+.page-template-blog-standard .sidebar #tag_cloud-3 {
+	display: block;
+}
+
+.wpjb-page-index {
+	max-width: 90%;
+	margin: auto;
+}
+
+/*.page-id-51056 .header-title h1 {
+    font-weight: 500; 
+}
+.page-id-51056 .header-title h1 span {
+	font-weight: 700;
+	font-size: 55px;
+}
+
+.page-id-51334 .header-title h1 {
+	text-align:left;
+	margin-left:50px;
+}
+*/
+.post_info_author_holder {
+	display: none;
+}
+
+.single_tags a, 
+aside.sidebar .widget .tagcloud a, 
+.widget .tagcloud a, 
+aside.sidebar .widget:not(.woocommerce) .tagcloud a {
+color: #A51B34;
+}
+
+.single_tags a:hover, 
+aside.sidebar .widget.widget_tag_cloud .tagcloud a:hover, 
+.widget .tagcloud a:hover {
+	border-color: #A51B34!important;
+    background-color: #A51B34!important;
+}
+
+#recent-posts-3 ul li,
+#recent-posts-2 ul li {
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.page-template-blog-standard aside {
+		margin-top: 0 !important;
+		top: 0 !important;
+	}
+	.container aside.sidebar.sticky_sidebar, aside.sidebar.sticky_sidebar {
+		position: relative;
+	}
+}
+
+/************** ARCHIVE **************/
+.date .content {
+	padding-top: 30px !important;
+}
+
+/*********** ABOUT PAGE ************/
+
+.header-title {
+    font-size: 34px;
+    height: 55px;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    color: #a00924 !important;
+    margin: 50px auto !important;
+    max-width: 60%;
+}
+
+}
+/*.header-title h1 {
+    text-align: center;
+    font-size: 55px;
+    height: 55px;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    color: #a00924 !important;
+}
+
+.page-id-50895 h1 {
+	font-size: 54px;
+    font-weight: normal;
+}*/
+
+.news-title-span {
+	font-size: 43px;
+    font-weight: bold;
+}
+
+/*********** JOB LIST PAGE ************/
+
+.sidebar #search-2,
+.sidebar #recent-comments-2,
+.sidebar #archives-2,
+.sidebar #categories-2,
+.sidebar #recent-posts-2,
+.sidebar #tag_cloud-3 {
+	display: none;
+}
+
+.wpjb-widget-item-count > div.wpjb-widget-item-num {
+	position: absolute;right: 0;
+}
+
+.page-id-51104 .featured-image-holder img {
+	
+	margin: auto;
+    display: block;
+    
+}
+
+.page-id-51104 .header-title img {
+	width: 30%;
+	margin: 0 30px 0;
+}
+
+.wpjb .wpjb-img-36 {
+	height: auto !important;
+}
+
+.job_list_header_title {
+	text-align: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 70px auto 70px;
+}
+
+.job_list_header_title h1 {
+	color: #a00924;
+	text-align: center;
+	display: inline-block;
+	padding: 0 20px;
+	background: #fff;
+	position: relative;
+    z-index: 1;
+    font-size: 30px;
+}
+.wpjb-top-search-submit input[type="submit"] {
+	border: none;
+	color: #5e5e5e;
+    background-color: #ebebeb;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
+    background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
+    background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
+    background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
+    background-image: linear-gradient(top, #f9f9f9, #ebebeb);
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+    padding: 6px 10px;
+    font-size: 11px;
+    margin-right: 3px;
+}
+
+.wpjb .wpjb-form input.wpjb-submit {
+	margin: 5px 0 5px 0;
+    border: none;
+    color: #fff;
+    background: #A51B34;
+    padding: 20px;
+    line-height: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.wpjb-top-search-submit input, 
+.page-id-51106 .wpjb .wpjb-form input.wpjb-submit {
+	border: none !important;
+    color: #fff !important;
+    background: #A51B34 !important;
+    padding: 15px !important;
+    line-height: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px !important;
+}
+
+.page-id-51106 .job_list_header_title {
+	margin: 0 !important;
+}
+
+.page-id-51106 .content_left_from_sidebar {
+	margin-top: 30px;
+}
+
+
+
+.post-51281 .product-description h4, .post-51281 .product-description ul {
+	color:#white;
+}
+
+
+
+.post-51281 .product-logo, .post-51285 .product-logo {margin-top:15px;}
+/********** CONTACT PAGE *********/
+
+.frm_style_formidable-style.with_frm_style input[type=text], 
+.frm_style_formidable-style.with_frm_style input[type=password], 
+.frm_style_formidable-style.with_frm_style input[type=email], 
+.frm_style_formidable-style.with_frm_style input[type=number], 
+.frm_style_formidable-style.with_frm_style input[type=url], 
+.frm_style_formidable-style.with_frm_style input[type=tel], 
+.frm_style_formidable-style.with_frm_style input[type=file], 
+.frm_style_formidable-style.with_frm_style input[type=search], 
+.frm_style_formidable-style.with_frm_style select {
+    height: 32px;
+    line-height: 1.3;
+    background-color: rgba(245,245,245,1);
+    border: none;
+}
+.frm_style_formidable-style.with_frm_style textarea {
+	background-color: rgba(245,245,245,1);
+    border: none;
+}
+
+.frm_style_formidable-style.with_frm_style input[type=submit] {
+	background: #A51B34;
+	color: #fff;
+}
+
+.wpjb .wpjb-bulb {
+	background-color: #A51B34;
+}
+
+@media screen and (min-width: 600px) {
+	#frm_field_97_container {
+		margin-right: 4%;
+	}
+}
+
+
+/********** SEARCH PAGE ************/
+
+@media screen and (min-width:1000px ) {
+	.search  .content_inner,
+	.search footer .footer_inner,
+	.date .content_inner, 
+	.date footer .footer_inner   {
+		padding-left: 290px !important;
+	}
+
+	#hero-carousel {
+		margin-top: 70px;
+	}
+	.header_inner {
+     /*padding-top: 10px; */
+    border-top: 30px solid #961533;
+    padding-bottom: 10px;
+    }
+}
+
+.q_logo {
+    position: relative;
+    top: 33px !important;
+    left: 0;
+}
+
+
+/********** FOOTER ***********/
+.footer_top .menu li {
+	display: inline-block;
+	margin: 0;
+}
+
+.footer_top .menu li a {
+	color:#22211f;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer_top .menu li:last-child a {
+	border-right: none;
+}
+
+.footer_top_holder {
+	    background-image: url(/wp-content/uploads/2015/10/harvest-hill-logo.png);
+	    background-size: auto;
+	    background-repeat: no-repeat;
+	    background-position: 50px 50%;
+}
+.getintouch-btn {
+	position: absolute;
+}
+
+.resources-block {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+	.getintouch-btn {
+		display: none;
+	}
+	.food-service-subheader {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.footer_top_holder {
+	    background-image: url(/wp-content/uploads/2015/10/harvest-hill-logo.png);
+	    background-size: auto;
+	    background-repeat: no-repeat;
+	    background-position: 10px 50%; 
+	}
+}
+
+/*footer menu *max-width was previously 1326*/
+@media screen and (max-width: 1450px) {
+	.footer_top_holder {
+	    background-image: url(/wp-content/uploads/2015/10/harvest-hill-logo.png);
+	    background-size: auto;
+	    background-repeat: no-repeat;
+	    background-position:50% 10px; 
+	}
+	.menu-footer-menu-container {
+		margin-top: 15px;
+	}
+	.main-food-service-container {
+		max-width: 85%;
+	}
+}
+.footer_bottom_holder, .footer_top_holder {
+	background-color: #961533;
+}
+.footer_top .container_inner {
+	padding: 15px 0 !important;
+}
+
+#text-2 .textwidget {
+	color: white;
+	font-size: 12px;
+}
+
+#menu-footer-menu li a {
+	text-transform: uppercase !important;
+	padding: 0 10px;
+    border-right: 1px solid #fff;
+    color: white;
+}
+
+#menu-footer-menu li:last-child a {
+	border: none;
+}
+
+
+
+.qode_slider_preloader, .q_slider .carousel, .full_screen_preloader, .vertical_split_slider_preloader {
+	background-color: transparent;
+}
+
+
+.post_excerpt sup {
+	font-size: 50%;
+	bottom: 7px;	
+}
+
+.full_width .full_width_inner {
+	width:100%;
+	margin:auto;
+
+}
+aside.vertical_menu_area {
+	padding-left:0;
+	padding-right:0;
+}
+
+.footer_top a {
+	font-size:12px;
+}
+.read_more_button {
+	margin-bottom:20px;
+}
+
+
+/***************** CUSTOM *******************/
+.bullet{
+	list-style-position: outside;
+	padding-left: 45px;
+
+}
+.bullet-text{
+	    line-height: 35px;
+}
+
+h3.red-title {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    padding-bottom: 17px;
+}
+
+.home div.section {
+	background:#fff;
+}
+
+.product-description h4, .product-description ul {
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.first-row-btn {
+	float: left; 
+	width: 33.3%;
+}
+
+.second-row-circle {
+	float: left;
+	width: 50%;
+}
+
+.row-circle-inner {
+	max-width: 220px;
+	text-align: center;
+	margin: auto;
+    color: #636363;
+    font-family: 'Open Sans';	
+}
+.page-template-contract-mfg .mfg-width, .page-template-contract-mfg .content-container  {
+	max-width: 60%;
+	margin: 30px auto;
+}
+
+
+.page-template-contract-mfg h3 {
+	padding: 20px 0px;
+}
+
+.page-template-contract-mfg .red-circle-text {
+    text-align: left;
+    max-width: 100%;
+    margin: auto;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.header_inner_right {
+	display: none;
+}
+
+.sellsheetTitle {
+    float: left;
+    padding-right: 20px;
+    padding-top: 8px;
+    min-width: 360px;
+}
+
+/********************* TEMPORARY JOB ADJUSTMENT  *********************/
+.job-template-default ul li {
+	color: #636363;
+}
+
+.page-id-51341 h3 {
+    font-size: 20px;
+    color: #961533;
+    font-weight: 700;
+}
+.page-id-51341 h4 {
+	font-weight: 300;
+	font-size: 21px;
+}
+
+.page-id-51056 .container {
+    max-width: 100%;
+    padding: 0px;
+
+}
+.page-id-51056 .job_list_header_title {
+	display: none;
+}
+
+
+
+	.tax-product_category .header_bottom .container {
+	    width: 1070px;
+	}
+
+
+.hero-carousel-inner {
+	max-width: 1100px;
+    margin: auto; 
+    margin-top: 10px;
+}
+
+/***************** MOBILE *****************/
+
+@media screen and (max-width: 1024px){
+	.hero-carousel-inner {
+		max-width: 95% !important;
+	}
+}
+@media screen and (min-width: 1190px) and (max-width:1350px;) {
+	.post-51285 .product-description ul li:nth-child(4),
+	.post-51285 .product-description ul li:nth-child(6) {
+		position: relative;
+    	bottom: 30px;
+	}
+
+
+}
+
+@media screen (min-width: 900px) and (max-width:1000px;) {
+	.post-51285 .product-description ul li:nth-child(4),
+	.post-51285 .product-description ul li:nth-child(6) {
+		position: relative;
+    	bottom: 30px;
+	}	
+}
+
+@media screen and (max-width: 1000px) {
+	.carousel .carousel-inner .slider_content {
+		position: absolute !important;
+		top:0 !important;
+		left:10% !important;
+	}
+	.q_logo img.mobile {
+		top: -27px;
+	}
+	/** MENU **/
+	.header_bottom {
+	    background: url(http://harvesthill.wpengine.com/wp-content/uploads/2015/10/sidebar_bg1.png);
+	    background-size: 100% auto;
+	    background-repeat: repeat-y;
+	}
+	.header_bottom, nav.mobile_menu {
+		background-color: transparent !important;
+	}
+	.header_bottom, nav.mobile_menu ul li a {
+		color: #666666;
+	}
+	.header_bottom, nav.mobile_menu ul li a.current, 
+	.mobile_menu_button .fa-bars,
+	nav.mobile_menu ul li a:hover {
+		color: #A00924;
+	}
+	.tax-product_category .header_bottom {
+		padding: 0;
+	}
+	.tax-product_category .header_bottom .container_inner {
+		width: 80%;
+	
+	}
+	/** ARCHIVE **/
+	.date .content {
+		padding-top: 30px !important;
+	}
+	/** BRANDS PAGE **/
+	.page-id-51056 .header-title {
+		margin-top: -160px !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/** Footer **/
+	.footer_top ul {
+	    list-style: none;
+	    text-align: center;
+	    margin-bottom: 40px;
+	}
+.product-image-holder img {
+	max-width: 75%;
+}
+	/** Home page **/
+	#news-loop .category-news h3 {
+		 font-size: 18px;
+	}
+	/*** Article Page **/
+	.blog_holder.blog_standard_type article:not(.format-quote):not(.format-link) h2 {
+		font-size: 25px !important;
+		line-height: 25px;
+	}
+	.bs1, .bs2, .bs3, .bs4 {
+		font-size: 25px;
+		line-height: 25px;
+	}
+	#qode-home-page-slider {
+		height: auto !important;
+	}
+	.carousel-inner, .carousel-inner .item .image {
+		height: auto !important;
+	}
+	.touch .carousel-inner .item {
+		max-height: 500px;
+	}
+	.page-id-51056 .header-title {
+		margin-top: -125px !important;
+	}
+	.page-template-contract-mfg .content-container,
+	.page-template-contract-mfg .mfg-width,
+	.page-template-about-us .about-us-header {
+	    max-width: 90% !important;
+	}	
+		.page-template-contract-mfg .container_inner {
+		max-width: 510px;
+	}
+	 
+}
+
+@media screen and (max-width: 650px) {
+	#qode-home-page-slider {
+		height: auto !important;
+	}
+	.carousel-inner, .carousel-inner .item .image {
+		height: auto !important;
+	}
+	.touch .carousel-inner .item {
+		max-height: 400px;
+	}
+	.home div.section {
+		padding-top: 0 !important;
+	}
+	.product-logo-holder, .product-description {
+		display: block;
+		overflow: hidden;
+	}
+	.product-logo-holder {
+		width: 100%;
+	}
+	.product-description {
+		width: 90%;
+		padding:20px 0;
+		margin: auto;
+		border: none !important;
+	}
+	.hpb .holder {
+		margin-top: 30px;
+	}
+	.three-logos div img {
+		width: 100%;
+	}
+	.home h2.q_slide_title{
+		font-size: 30px !important;
+	}
+	.home h3.q_slide_text {
+		font-size: 27px !important;
+	}
+	.product-logo-holder img {
+		margin: 20px auto 0;
+	}
+	.product_category-dailys .product-logo-holder img {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.q_slide_title, .header-title h1 {
+		font-size: 25px !important;
+		line-height: 30px;
+	}
+	.touch .carousel-inner .item {
+		max-height: 350px;
+	}
+/**	.header-title {
+		top: 0 !important;
+	} **/
+	.page-id-51056 .full_width_inner {
+		padding-top: 0 !important;
+	}
+	.page-id-51056 .header-title {
+		margin-top: -90px !important;
+	}
+}
+@media screen and (max-width: 500px) {
+	.home h2.q_slide_title{
+		font-size: 21px !important;
+		margin-bottom: 0
+	}
+	.home h3.q_slide_text {
+		font-size: 16px !important;
+	}
+	.home h3.q_slide_text span {
+		padding-top:  0 !important;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.q_slide_title {
+		font-size: 18px !important;
+		line-height: 20px !important;
+	}
+	.carousel-inner .left h3 {
+		font-size: 18px !important;
+	}
+	.carousel-inner .left h3 span {
+		padding-top: 0 !important;
+	}
+	.touch .carousel-inner .item {
+		max-height: 290px;
+	}
+	.product-description ul li {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.bs1, .bs2, .bs3, .bs4 {
+		font-size: 18px;
+		line-height: 15px;
+	}
+	.page-id-51056 .header-title p {
+		line-height: 18px;
+	}
+	.page-id-51056 .header-title {
+	    margin-top: -60px !important;
+	}
+	.touch section.parallax_section_holder {
+		/*min-height: 300px !important;*/
+	}
+	.product_category_decsritpion h2 {
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 350px) {
+	.touch .carousel-inner .item {
+		max-height: 200px;
+	}
+	.bs1, .bs2, .bs3, .bs4  {
+		font-size: 12px;
+	}
+
+}
+
+/*********** PRODUCT CATEGORY DESCRIPTION **********/
+.product_category_decsritpion {
+	max-width: 914px;
+	margin: auto;
+	width: 95%;
+	margin: 65px auto;
+}
+.product_category_decsritpion h2 {
+	margin-bottom: 35px;
+}
+
+.product-category-title {
+	font-weight: 300;
+	font-family: Montserrat;
+	font-size: 41px;
+
+}
+
+.product-description p, .product-description h4 {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 20px;
+}
+
+.product-description ul li {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Montserrat;
+    color: white;
+}
+
+.slick-arrow {
+	visibility: hidden;
+	position: absolute;
+}
+.slick-arrow:before, .slick-arrow:after {
+	visibility: visible;
+	color: #fff;
+
+}
+.slick-arrow:before {
+	cursor: e-resize;
+}
+
+.slick-arrow:after {
+	cursor: w-resize;
+}
+.slick-dots button {
+    border-radius: 50%;
+    color: transparent;
+    font-size: 0px;
+    border: none;
+    height: 18px;
+    width: 18px;
+}
+.slick-dots li {
+	display: inline-block;
+	margin:10px 5px;
+}
+.slick-dots {
+	display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -64px;
+    /* position: relative; */
+    text-align: center;
+}
+.slick-dots button {
+	background: #fff;
+}
+.slick-active button {
+	background: #a00924;
+}
+.slick-dots button:focus, .slick-arrow:focus {
+	outline: none;
+}
+.slick-list {
+	max-width: 100%;
+}
+.slick-slide img {
+	width: 100%;
+}
+.slick-arrow {
+	top: 50%;
+	margin-top: -25px;
+	z-index: 99;
+	font-size: 0;
+    line-height: 0;
+}
+.slick-next {
+	right: 30px;
+	text-align: left;
+}
+.slick-prev {
+	text-align: right;
+	left: 30px;
+}
+#hero-carousel .slick-arrow {
+	height: 60px;
+}
+#hero-carousel .slick-arrow:before,
+#hero-carousel .slick-arrow:after {
+	font-size:50px;
+}
+#logo-carousel .slick-arrow{
+	visibility: visible;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+#logo-carousel .slick-prev {
+
+}
+#logo-carousel .slick-arrow:before,
+#logo-carousel .slick-arrow:after {
+	color: #a00924;
+}
+#logo-carousel .slick-slide img {
+	max-width: 100%;
+    width: auto;
+    margin: auto;
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+#logo-carousel .slick-slide:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+#logo-carousel .slick-slide {
+	height: 108px; 
+}
+#logo-carousel .slick-slide:hover {
+
+	/*border-bottom: 6px solid #990033; */
+}
+#logo-carousel .slick-next {
+	right: -10px;
+}
+#logo-carousel .slick-prev {
+	left: -10px;
+}
+#logo-carousel .slick-arrow {
+	top:0;
+	bottom: 0;
+}
+#logo-carousel {
+    height: 95px;
+}
+
+.removeautop p {
+	display: none;
+}
+
+
+/****************** Brands *********************/
+		.tax-product_category #nav-menu-item-51071 a {
+	color: #961533;
+    border-bottom: 5px solid #961533;
+}
+		.brands {
+			width: 318px;
+			height: 289px;
+			float: left; 
+			margin: 5px;
+			/*transition: background-image ease-out 0.5s;*/
+		}
+		.brands:hover {
+		    transition: background-image ease-in 0.5s;
+		}
+		.brands-container {
+		    max-width: 1000px;
+		    margin: auto;
+		}
+		.brands-container p {
+		    display: none;
+		}
+		@media screen and (max-width: 1100px) {
+			.brands-container {
+				max-width: 660px;
+			}
+		}
+		@media screen and (max-width: 678px) {
+			.brands-container {
+				max-width: 340px;
+			}
+		}
+
+
+		#jj:hover{
+			background: url(/wp-content/uploads/2015/11/jj-mo.png);
+			background-size: cover;
+			 
+		}
+		#jj {
+			background: url(/wp-content/uploads/2015/11/jj-logo-1.png);
+			background-size: cover;
+
+		}
+		#sunnyd:hover{
+			background: url(/wp-content/uploads/2015/11/Brands_Tile_SunnyD_MO.png);
+			background-size: cover;
+			 
+		}
+		#sunnyd {
+			background: url(/wp-content/uploads/2015/11/sunnyd-logo.png);
+			background-size: cover;
+	
+		}
+		#fruit20:hover{
+			background: url(/wp-content/uploads/2015/11/fruit20-mo.png);
+			background-size: cover;
+			 
+		}
+		#fruit20 {
+			background: url(/wp-content/uploads/2015/11/fruit20-logo.png);
+			background-size: cover;
+
+		}
+		#nutrament:hover{
+			background: url(/wp-content/uploads/2015/11/nutrament-mo.png);
+			background-size: cover;
+			 
+		}
+		#nutrament {
+			background: url(/wp-content/uploads/2015/11/Brands_Tile_Nutrament_Rest.png);
+			background-size: cover;
+		}
+		#dailys-cocktail:hover{
+			background: url(/wp-content/uploads/2015/11/dailys_cocktails-mo.png);
+			background-size: cover;
+			 
+		}
+		#dailys-cocktail {
+			background: url(/wp-content/uploads/2015/11/dailys_cocktails-logo.png);
+			background-size: cover;
+		}
+		#veryfine:hover{
+			background: url(/wp-content/uploads/2015/11/veryfine-mo.png);
+			background-size: cover;
+			 
+		}
+		#veryfine {
+			background: url(/wp-content/uploads/2015/11/veryfine-logo.png);
+			background-size: cover;
+		}
+		#little-hug:hover{
+			background: url(/wp-content/uploads/2015/11/little-hug-mov2.png);
+			background-size: cover;
+			 
+		}
+		#little-hug {
+			background: url(/wp-content/uploads/2015/11/little-hug-logo-1.png);
+			background-size: cover;
+		}
+		#guzzler:hover{
+			background: url(/wp-content/uploads/2015/11/guzzler-mo.png);
+			background-size: cover;
+			 
+		}
+		#guzzler {
+			background: url(/wp-content/uploads/2015/11/guzzler-logo-1.png);
+			background-size: cover;
+		}
+		#bigburst:hover{
+			background: url(/wp-content/uploads/2015/11/big_burst-mo.png);
+			background-size: cover;
+			 
+		}
+		#bigburst {
+			background: url(/wp-content/uploads/2015/11/big_burst-logo.png);
+			background-size: cover;
+		}
+		#green-beginnings:hover{
+			background: url(/wp-content/uploads/2018/01/Brands_Tile_Green-Beginnings_MO-1.png);
+			background-size: cover;
+			 
+		}
+		#green-beginnings {
+			background: url(/wp-content/uploads/2018/01/Brands_Tile_Green-Beginnings_REST-1.png);
+			background-size: cover;
+		}
+		#darty:hover{
+			background: url(/wp-content/uploads/2015/11/darty-mo.png);
+			background-size: cover;
+			 
+		}
+		#darty {
+			background: url(/wp-content/uploads/2015/11/darty-logo.png);
+			background-size: cover;
+		}
+		#big-hug:hover{
+			background: url(/wp-content/uploads/2015/11/big_hug_fruit_barrels-mo.png);
+			background-size: cover;
+			 
+		}
+		#big-hug {
+			background: url(/wp-content/uploads/2015/11/big_hug_fruit_barrels.png);
+			background-size: cover;
+		}
+
+
+
+/************ HACKY STUFF **************/
+.term-dailys .product-description ul li {
+    width: 80%;
+}
+
+
+.drop_down .second .inner>ul, li.narrow .second .inner ul {
+    background-color: #a00924 !important;
+    width: 330px;
+}
+
+.drop_down .second .inner>ul, li.narrow .second .inner ul, .drop_down .narrow .second .inner ul li ul {
+    border-width: 0px !important;
+
+}
+
+
+.drop_down .second .inner ul li a, .drop_down .second .inner ul li h4 {
+	    color: #ffffff !important;
+	    border: none !important;
+}
+
+.drop_down .second .inner > ul > li:hover > a {
+	color: white !important;
+	font-weight: bold !important;
+}
+
+.drop_down .second .inner ul li {
+    display: inline-block !important;
+
+}
+
+.drop_down .narrow .second .inner ul li {
+    padding: 0;
+    width: 156px;
+
+}
+
+.drop_down .second .inner ul li a, .drop_down .second .inner ul li h4 {
+    border-bottom: none !important;
+    margin-right: 0px !important;
+}
+
+.home-sub-block-container {
+    margin: auto;
+    display: block;
+    margin-top: 60px;
+    max-width: 1023px;
+}
+
+/*NEWS PAGE*/
+.two_columns_75_25>.column2 {
+	display: none;
+}
+
+.two_columns_75_25>.column1 {
+	width: 100%;
+}
+
+#nav-menu-item-51745 .inner ul {
+    width: 170px;
+}
+
+/*END OF NEWS PAGE*/
+/**************  END HACKY STUFF **************/
+
+
+/****************** /Brands *********************/
+/******************** HOME PAGE *********************/
+
+
+#hero-carousel .slick-next:before {
+	content: url(http://harvesthill.staging.wpengine.com/wp-content/uploads/2017/10/hero-carousel-ra-v2.png);
+	cursor: e-resize;
+}
+
+#hero-carousel .slick-prev:after {
+	content: url(http://harvesthill.staging.wpengine.com/wp-content/uploads/2017/10/hero-carousel-la-v2.png);
+	cursor: w-resize;
+}
+
+@media (min-width: 576px){
+
+
+.home .container {
+    max-width: 650px;
+}
+}
+@media (min-width: 768px){
+	.home .container {
+	    max-width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 480px){
+	.page-id-51056 .container_inner {
+		width: 330px;
+	}
+}
+	
+}
+
+/*************** FOOD SERVICE ***********************/
+.page-id-51706 .food-service-header {
+    font-family: 'Open Sans';
+    color: #a00924;
+    font-weight: 100;
+}
+
+.row p {
+	display: none;
+}
+
+.container-fluid p {
+	display: none;
+}
+
+
+@media screen and (max-width: 520px) {
+	#fs-req-fields {
+		display: none;
+	}
+}
+
+/*************** END OF  FOOD SERVICE ***********************/
+
+#wpjb-top-search {
+	display: none;
+}
+.container {
+    width: 100%;
+}
+
+.req-fields {
+    text-align: right;
+    font-style: italic;
+    position: relative;
+    top: 26px;
+    right: 17px;
+}
+
+.hide {
+	display: none;
+}
+
+/*************** JOBS PAGE ****************/
+
+.job-listing-meta  {
+	display: block;
+}
+#nf-form-title-2 {
+	display: none;
+}
+.holder_914 {
+	max-width: 914px;
+	margin: auto;
+	padding-top: 30px;
+}
+.search_fields_holder {
+	background: #a00924;
+	padding: 44px 30px;
+}
+.job_listing .company_logo {
+	display: none;
+}
+.job_filters .search_jobs {
+	padding: 0;
+}
+#search_keywords, #search_location {
+	height: 45px;
+	padding-left: 5px;
+}
+.job_filters .job_types {
+	display: none;
+}
+.fbc_label, .filter_by_tag_cloud {
+	display: inline-block;
+	vertical-align: top;
+}
+.job_filters {
+	background: transparent;
+}
+.filter_by_tag {
+	padding: 20px 25px !important;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    margin-top: 50px;    
+    margin-bottom: 30px;
+}
+.filter_by_tag_cloud {
+	padding-left: 10px;
+}
+.fbc_label {
+	padding: 10px 15px 10px 0px;
+	border-right: 1px solid #707070;	
+	color: #a00924;
+	font-weight: bold;
+	font-size: 18px;
+}
+.job_filters .search_jobs .filter_by_tag a {
+	border: 2px solid #2e2e2e;
+    font-size: 18px !important;
+    color: #2e2e2e;
+}
+.job_filters .search_jobs .filter_by_tag a:hover,
+.job_filters .search_jobs .filter_by_tag a:focus {
+	text-decoration: none;
+}
+.showing_jobs {
+	display: none !important;
+}
+.job_listings .job_listing {
+	margin-bottom: 55px !important;
+	border-bottom: none !important; 
+	background: #fff;
+}
+
+.page-id-51104 .full_width_inner {
+	background: url(/harvesthill/wp-content/uploads/2018/01/job_page_bg.png);
+	background-position: right 20px bottom 10px;
+	margin-bottom: 0 !important;
+
+}
+.page-id-51104 h2 {
+	font-size: 55px;
+	padding-top: 30px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+.page-id-51104 .featured-image-holder {
+	margin-bottom: 0px;
+}
+.job_listings .location {
+	font-size: 16px;
+	color: #454545 !important;
+}
+.location_label_job {
+	color: #a00924 !important;
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+.job_listings .position,
+.job_listings .location,
+.job_details_btn_holder,
+.job_listings .company_name {
+	width: 24% !important;
+	float: none !important;
+	display: inline-block !important;
+	vertical-align: middle;
+	line-height: 24px !important;
+}
+.job_listings .company_name  {
+	font-size: 16px !important;
+	color: #454545 !important;
+}
+.company_name_label {
+	font-size: 15px !important;
+	color: #a00924 !important;
+	margin-bottom: 8px;
+}
+.job_details_btn_holder {
+	float: left;
+	text-align: right;
+}
+.job_details_btn {
+	color: #ad2a41;
+    border: 2px solid #ad2a41;
+    padding: 4px 12px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+}
+.job_filters .search_jobs .filter_by_tag a {
+	padding: 3px 5px;
+}
+.blog_single .job_listing h2 {
+	font-size: 35px !important;
+    font-weight: 300;
+}
+.single_job_listing .job-listing-meta li {
+	display: block;
+	float: none;
+}
+table.job-listing-meta tr {
+	border: 0;
+}
+.ls1 {
+	font-size: 15px;
+	display: inline-block;
+	color: #A51B34 !important;
+	margin-right: 60px;
+	width: 100px;
+	text-align: left;
+	font-weight: normal !important;
+}
+.ls2 {
+	font-size: 15px !important;
+	display: inline-block;
+	color: #454545 !important;
+	text-align: left;
+	font-weight: normal !important;
+}
+.ls2 a {
+	color: #454545 !important;
+	font-weight: normal !important;
+}
+.single_job_listing .job-type {
+	background-color: transparent !important;
+}
+.single_job_listing .meta .location:before {
+	display: none;
+}
+.job_filters .search_jobs .filter_by_tag a.active {
+	background: #666;
+    text-decoration: none;
+    color: #fff;
+}
+.single_job_listing .company {
+	display: none;
+}
+.job_overview_label {
+	font-size: 35px;
+	font-weight: 300;
+	margin-bottom: 30px;
+	color: #454545;
+}
+.single_job_listing .job-listing-meta {
+	border-bottom: 1px solid #000;
+    padding: 30px 0;
+    margin-bottom: 35px;
+}
+.job_description .job_tags {
+	display: none;
+}
+.single_job_listing .application .application_button {
+	padding: 12px 35px;
+	background: #a00924;
+	color: #fff;
+	font-size: 15px;
+}
+.job_application form {
+	max-width: 540px;
+}
+.single_job_listing .application .application_details {
+	background: #e4e8f0;
+}
+.job_application .frm_submit {
+	margin-left: 0;
+}
+.job_application .frm_style_formidable-style.with_frm_style input[type=submit] {
+	padding: 12px 35px !important;
+    background: #a00924 !important;
+    color: #fff !important;
+    font-size: 15px !important;
+    border-radius: 0 !important;
+    line-height: 16px !important;
+
+}
+.frm_style_formidable-style.with_frm_style label.frm_primary_label {
+	font-family: "Open Sans",sans-serif;
+    font-size: 18px !important;
+    color: #454545 !important;
+    font-weight: normal !important;
+}
+#file113_dropzone .frm_small_text {
+	display: none;
+}
+.search_btn {
+	color: #fff;
+	border: 2px solid #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+#single_job_app_details td {
+	text-align: left; 
+}
+.jad_label {
+	font-weight: bold;
+
+}
+.job_listing .post_text_inner {
+	margin: auto;
+	width: 95%;
+}
+.job-listing-meta {
+	box-shadow: none;
+}
+.job-listing-meta .location {
+	background: transparent;
+}
+.table-sort th {
+	background-image: none;
+	background-color: #961533 !important;
+	font-weight: bold;
+}
+th.table-sort:hover {
+	background-image: none !important;
+	background-color: #961533 !important;
+}
+table.table-sort td {
+	font-weight: 400;
+	font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+	.job_listings .position, .job_listings .location, .job_details_btn_holder, .job_listings .company_name {
+		width: 32% !important;
+		text-align: left !important;
+		vertical-align: top;
+	}
+	.job_listings .company_name  {
+		font-size: 14px !important;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.filter_by_tag_cloud {
+		max-width: 200px;
+	}
+	.job_filters .search_jobs .filter_by_tag a {
+		padding: 3px 5px;
+	    display: inline-block;
+	    margin-bottom: 4px;
+	}
+	.job_details_btn {
+		font-size: 11px;
+	}
+	ul.job_listings li.job_listing a div.location, ul.job_listings li.no_job_listings_found a div.location {
+		text-align: center;
+	}
+	.job_listings .position, .job_listings .location, .job_details_btn_holder {
+		text-align: center;		
+	}
+	.job_listings .location {
+		padding-left: 0 !important;
+	}
+}
+@media screen and (max-width: 450px) {
+	.job_details_btn {
+	    font-size: 10px;
+	    margin-top: 20px;
+	}
+}
+.filter_by_tag_cloud {
+	padding-top: 20px !important;
+}
+
+/* new clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 
+
+
+
+
