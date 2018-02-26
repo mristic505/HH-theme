@@ -88,5 +88,57 @@ jQuery(document).ready(function($){
 		// $('.search_keywords, .search_btn').wrapAll('<div class="search_fields_holder clearfix"></div>');
 		// $('.filter_wide filter_by_tag').html('FILTER BY <br>CATEGORY')
 
+		$current_url = window.location.href;
+
+		// Change Job Application Status ===========================
+		$(document).on('click', '.app_statuses li a', function() {
+			var app_status = $(this).data('status');
+			$(this).closest('.btn-group').find('.app_status_btn').html(app_status + ' <span class="caret"></span>');			
+			
+			var application_id = $(this).closest('.app_statuses').data('job-id');
+			var formData = {
+				'application_id' 		: application_id,
+				'application_status'	: app_status
+			}
+	        $.ajax({
+	            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+	            url         : '../../wp-content/themes/brick-child/job_manager/update-job-application-status.php', // the url where we want to POST
+	            data        : formData, // our data object
+	            dataType    : 'json', // what type of data do we expect back from the server
+	            encode      : true
+	        }).done(function(data) {
+	            console.log(data); 
+	        });
+
+		});
+
+		// Change Job Status ===========================
+		$('.job_status .btn').click(function(){
+			// Toggle check mark
+			if(!$(this).hasClass('pressed')) {
+				$(this).addClass('pressed');
+				$('.pressed').not(this).removeClass('pressed');
+			}
+			// Update Job Status in DB
+			if($(this).data('job-status') > 0) {
+				var job_status  = 1;
+			} else {
+				var job_status  = 0;
+			}
+			var formData = {
+				'job_status' : job_status,
+				'job_id'	 : $(this).data('job-id')
+			}
+			$.ajax({
+	            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+	            url         : '../../wp-content/themes/brick-child/job_manager/update-job-status.php', // the url where we want to POST
+	            data        : formData, // our data object
+	            dataType    : 'json', // what type of data do we expect back from the server
+	            encode      : true
+	        }).done(function(data) {
+	            console.log(data); 
+	        });
+		}); 
+
 
 });

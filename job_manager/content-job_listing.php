@@ -30,10 +30,29 @@ global $post;
 		</div>
 		<div class="company_name">
 			<div class="company_name_label">Company</div>
-			<?php the_company_name(); ?>
+			<?php the_company_name(); ?>			
 		</div>
 		<div class="job_details_btn_holder">
 			<div class="job_details_btn">JOB DETAILS</div>
+			<?php
+				$job_post_id = get_the_ID();
+				$number_of_applicants = 0;
+				// the query
+				$args = array(
+					'post_type' => 'job_applications',
+					'numberposts'	=> -1,
+					'meta_key'		=> 'Job Post ID',
+					'meta_value'	=> $job_post_id	
+				);
+				$the_query = new WP_Query( $args ); 
+				if ( $the_query->have_posts() ) : 
+					while ( $the_query->have_posts() ) : $the_query->the_post(); 
+						$number_of_applicants++; 						
+					endwhile; 
+					wp_reset_postdata(); 
+				endif; 
+			?>
+			<p>Applications: <span><?php echo $number_of_applicants; ?></span></p>
 		</div>
 	</a>
 </li>

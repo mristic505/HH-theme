@@ -18,6 +18,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post;
 ?>
+<div class="job_status">
+	<?php 
+	$job_status = get_post_meta(get_the_ID(), "_filled", true);
+	$job_status_icon = '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>';
+	if ($job_status > 0) { ?>
+		<div class="btn-group btn-group-justified" role="group" aria-label="...">
+		  <div class="btn-group" role="group">
+		    <button data-job-status="0" data-job-id="<?php echo get_the_ID(); ?>" type="button" class="btn btn-default">Active <?php echo $job_status_icon; ?></button>
+		  </div>
+		  <div class="btn-group" role="group">
+		    <button data-job-status="1" data-job-id="<?php echo get_the_ID(); ?>" type="button" class="btn btn-default pressed">Archived <?php echo $job_status_icon; ?></button>
+		  </div>
+		</div>
+	<?php } else { ?>
+		<div class="btn-group btn-group-justified" role="group" aria-label="...">
+		  <div class="btn-group" role="group">
+		    <button data-job-status="0" data-job-id="<?php echo get_the_ID(); ?>" type="button" class="btn btn-default pressed">Active <?php echo $job_status_icon; ?></button>
+		  </div>
+		  <div class="btn-group" role="group">
+		    <button data-job-status="1" data-job-id="<?php echo get_the_ID(); ?>" type="button" class="btn btn-default">Archived <?php echo $job_status_icon; ?></button>
+		  </div>
+		</div>
+	<?php } ?>
+</div>
 <div class="single_job_listing">
 	<?php if ( get_option( 'job_manager_hide_expired_content', 1 ) && 'expired' === $post->post_status ) : ?>
 		<div class="job-manager-info"><?php _e( 'This listing has expired.', 'wp-job-manager' ); ?></div>
@@ -50,3 +74,4 @@ global $post;
 		?>
 	<?php endif; ?>
 </div>
+<?php get_job_manager_template( 'job_applicants.php' ); ?>
