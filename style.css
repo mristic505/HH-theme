@@ -1912,7 +1912,8 @@ h3.red-title {
 }
 
 .page-id-51104 .full_width_inner {
-	background: url(/harvesthill/wp-content/uploads/2018/01/job_page_bg.png);
+	background: url(/wp-content/uploads/2018/01/job_page_bg.png);
+	background: #e4e9f0;
 	background-position: right 20px bottom 10px;
 	margin-bottom: 0 !important;
 
