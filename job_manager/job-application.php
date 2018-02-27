@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				/**
 				 * job_manager_application_details_email or job_manager_application_details_url hook
 				 */
-				echo do_shortcode('[formidable id=10]');
+				echo do_shortcode('[formidable id=9]');
 			?>
 		</div>
 		<?php do_action( 'job_application_end', $apply ); ?>

@@ -85,24 +85,5 @@ function hh_header_styles() {
     wp_enqueue_style('hh_header_styles'); // Enqueue it!
 }
 
-function my_custom_post_status(){
+// Page Restrictions
 
-register_post_status( '<strong>pitch</strong>', array(
-
-'label'                     => _x( '<strong>Pitch</strong>', 'post' ),
-
-'public'                    => false,
-
-'exclude_from_search'       => true,
-
-'show_in_admin_all_list'    => true,
-
-'show_in_admin_status_list' => true,
-
-'label_count'               => _n_noop( '<strong>Pitch</strong> <span class="count">(%s)</span>', '<strong>Pitches</strong> <span class="count">(%s)</span>' ),
-
-) );
-
-}
-
-add_action( 'init', 'my_custom_post_status' );

@@ -1,4 +1,5 @@
 <?php 
+if(is_user_logged_in()) :
 $job_post_id = get_the_ID();
 // the query
 $args = array(
@@ -11,7 +12,7 @@ $the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) : ?>
 
-<table class="table-sort table-sort-search">
+<table class="table-sort table-sort-search applications_table">
 	<thead>
 	    <tr>
 	        <th class="table-sort">Full Name</th>
@@ -73,4 +74,6 @@ $the_query = new WP_Query( $args ); ?>
 
 <?php else : ?>
 	<h3 style="margin-top: 30px;"><?php esc_html_e( 'No job applications found for this job posting' ); ?></h3>
+<?php endif; ?>
+
 <?php endif; ?>

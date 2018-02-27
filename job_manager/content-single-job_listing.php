@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $post;
-?>
+if(is_user_logged_in()) :?>
 <div class="job_status">
 	<?php 
 	$job_status = get_post_meta(get_the_ID(), "_filled", true);
@@ -42,6 +42,7 @@ global $post;
 		</div>
 	<?php } ?>
 </div>
+<?php endif; ?>
 <div class="single_job_listing">
 	<?php if ( get_option( 'job_manager_hide_expired_content', 1 ) && 'expired' === $post->post_status ) : ?>
 		<div class="job-manager-info"><?php _e( 'This listing has expired.', 'wp-job-manager' ); ?></div>
@@ -64,8 +65,8 @@ global $post;
 		<?php if ( candidates_can_apply() ) : ?>
 			<?php get_job_manager_template( 'job-application.php' ); ?>
 		<?php endif; ?>
-		<hr>
-		<a style="color: #636363;" href="/jobs">< Back to Search</a>
+		<!-- <hr> -->
+		<!-- <a style="color: #636363;" href="/jobs">< Back to Search</a> -->
 		<?php
 			/**
 			 * single_job_listing_end hook
