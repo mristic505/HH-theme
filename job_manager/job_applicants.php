@@ -39,7 +39,9 @@ $the_query = new WP_Query( $args ); ?>
 
 			<td><?php echo get_post_meta(get_the_ID(), "Location", true); ?></td>	
 
-			<td><?php echo 'Cover Letter'; //get_the_content(); ?></td>
+			<td>
+				<a href="javascript:void(0);" class="" data-toggle="modal" data-target="#cl_<?php echo get_the_ID(); ?>">Click to Read</a>						
+			</td>
 			
 			<td><a href="<?php echo wp_get_attachment_url( $file_id ); ?> ">Click to Download</a></td>	
 			
@@ -50,9 +52,9 @@ $the_query = new WP_Query( $args ); ?>
 				    <span class="status_label"><?php echo get_post_meta(get_the_ID(), "Application Status", true); ?><span> <span class="caret"></span>
 				  </button>
 				  <ul data-job-id="<?php echo get_the_ID(); ?>" class="dropdown-menu app_statuses">
-				    <li><a data-status="Approved" href="javascript:void(0);">Approved</a></li>
+				    <!-- <li><a data-status="Approved" href="javascript:void(0);">Approved</a></li>
 				    <li><a data-status="Rejected" href="javascript:void(0);">Rejected</a></li>
-				    <li><a data-status="Pending" href="javascript:void(0);">Pending</a></li>
+				    <li><a data-status="Pending" href="javascript:void(0);">Pending</a></li> -->
 				  </ul>
 				</div>
 
@@ -63,6 +65,25 @@ $the_query = new WP_Query( $args ); ?>
 			</td>
 
 		</tr>
+		<!-- Modal -->
+		  <div class="modal fade" id="cl_<?php echo get_the_ID(); ?>" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>	<h4><?php echo get_post_meta(get_the_ID(), "Full Name", true); ?> - Cover Letter</h4>		          
+		        </div>
+		        <div class="modal-body">
+		          <?php echo get_the_content(); ?>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		  </div>
 
 	<?php endwhile; ?>
 	<!-- end of the loop -->
@@ -73,7 +94,7 @@ $the_query = new WP_Query( $args ); ?>
 	<?php wp_reset_postdata(); ?>
 
 <?php else : ?>
-	<h3 style="margin-top: 30px;"><?php esc_html_e( 'No job applications found for this job posting' ); ?></h3>
+	<h3 class="njf" style="margin-top: 30px;"><?php esc_html_e( 'No job applications found for this job posting' ); ?></h3>
 <?php endif; ?>
 
 <?php endif; ?>

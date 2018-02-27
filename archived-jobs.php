@@ -139,7 +139,7 @@ if(get_post_meta($id, "qode_content-top-padding", true) != ""){
 											<?php wp_reset_postdata(); ?>
 
 										<?php else : ?>
-											<h3 style="margin-top: 30px;"><?php esc_html_e( 'No job applications found for this job posting' ); ?></h3>
+											<h3 style="margin-top: 30px;"><?php esc_html_e( 'No Archived Job Postings Found' ); ?></h3>
 										<?php endif; ?>
 									</div>	
 								</div>						

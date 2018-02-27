@@ -90,6 +90,11 @@ jQuery(document).ready(function($){
 
 		$current_url = window.location.href;
 
+
+		$(document).on('click', '.app_status_btn', function() {
+			$(this).parent().find('ul').html('<li><a data-status="Approved" href="javascript:void(0);">Approved</a></li><li><a data-status="Rejected" href="javascript:void(0);">Rejected</a></li><li><a data-status="Pending" href="javascript:void(0);">Pending</a></li>');
+		});
+
 		// Change Job Application Status ===========================
 		$(document).on('click', '.app_statuses li a', function() {
 			var app_status = $(this).data('status');
@@ -108,6 +113,10 @@ jQuery(document).ready(function($){
 	            encode      : true
 	        }).done(function(data) {
 	            console.log(data); 
+	            // $(this).closest('li').each(function(){
+
+	            // });
+	            $('.app_statuses').html('');
 	        });
 
 		});

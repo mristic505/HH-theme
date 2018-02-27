@@ -2231,6 +2231,58 @@ ul.job_listings li.job_listing.job_position_filled a {
     padding: 0 10px !important;
     border: 1px solid #cccccc !important;
 }
+#job_preview .job_status,
+#job_preview .njf {
+	display: none;
+}
+.entry-content .job_listing_preview_title .button, .job_listing_preview_title .button {
+    float: right;
+    margin-left: .25em;
+    padding: 12px 35px;
+    background: #a00924;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.job-manager-form fieldset input.input-text, .job-manager-form fieldset select {
+	border-radius: 4px !important;
+    height: 32px !important;
+    padding: 0 10px !important;
+    border: 1px solid #cccccc !important;
+    font-size: 14px !important;
+}
+.job-manager-form fieldset label {
+	font-family: "Open Sans",sans-serif;
+    font-size: 18px !important;
+    color: #454545 !important;
+    font-weight: normal !important;
+}
+input[name="submit_job"] {
+	padding: 12px 35px;
+    background: #a00924;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+#submit-job-form {
+	margin-bottom: 80px;
+}
+#submit-job-form h2 {
+	display: none;
+}
+#job_preview {
+	margin-bottom: 80px;
+}
+.modal-backdrop.in {
+	display: none !important;
+}
+.modal {
+	top: 100px;
+}
+.table-sort tbody tr:nth-child(1) {
+	display: none;
+}
 
 /* new clearfix */
 .clearfix:after {
