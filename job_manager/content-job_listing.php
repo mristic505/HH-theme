@@ -34,7 +34,7 @@ global $post;
 		</div>
 		<div class="job_details_btn_holder">
 			<div class="job_details_btn">JOB DETAILS</div>
-			<?php
+			<?php if(is_user_logged_in()) :
 				$job_post_id = get_the_ID();
 				$number_of_applicants = 0;
 				// the query
@@ -53,6 +53,7 @@ global $post;
 				endif; 
 			?>
 			<p>Applications: <span><?php echo $number_of_applicants; ?></span></p>
+			<?php endif;  ?>
 		</div>
 	</a>
 </li>

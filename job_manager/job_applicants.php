@@ -1,6 +1,7 @@
 <?php 
 if(is_user_logged_in()) :
 $job_post_id = get_the_ID();
+$job_title = get_the_title();
 // the query
 $args = array(
 	'post_type' => 'job_applications',
@@ -27,29 +28,38 @@ $the_query = new WP_Query( $args ); ?>
 	<tbody>
 
 	<!-- the loop -->
-	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
+	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 	
+
+	$full_name = get_post_meta(get_the_ID(), "Full Name", true);
+	$email = get_post_meta(get_the_ID(), "Email", true);
+	$location = get_post_meta(get_the_ID(), "Location", true);
+	$cover_letter = get_the_content();
 	$file_id = get_post_meta(get_the_ID(), "Resume", true);
+	$application_status = get_post_meta(get_the_ID(), "Application Status", true);
+	$attachment_url = wp_get_attachment_url( $file_id );
+	$attachment_path = get_attached_file($file_id);
+
 	?>
 		
 		<tr>
 
-			<td><?php echo get_post_meta(get_the_ID(), "Full Name", true); ?></td>	
+			<td><?php echo $full_name; ?></td>	
 
-			<td><?php echo get_post_meta(get_the_ID(), "Email", true); ?></td>	
+			<td><?php echo $email; ?></td>	
 
-			<td><?php echo get_post_meta(get_the_ID(), "Location", true); ?></td>	
+			<td><?php echo $location; ?></td>	
 
 			<td>
 				<a href="javascript:void(0);" class="" data-toggle="modal" data-target="#cl_<?php echo get_the_ID(); ?>">Click to Read</a>						
 			</td>
 			
-			<td><a href="<?php echo wp_get_attachment_url( $file_id ); ?> ">Click to Download</a></td>	
+			<td><a href="<?php echo $attachment_url; ?> ">Click to Download</a></td>	
 			
 			<td>
 
 				<div class="btn-group">
 				  <button type="button" class="app_status_btn btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    <span class="status_label"><?php echo get_post_meta(get_the_ID(), "Application Status", true); ?><span> <span class="caret"></span>
+				    <span class="status_label"><?php echo $application_status; ?><span> <span class="caret"></span>
 				  </button>
 				  <ul data-job-id="<?php echo get_the_ID(); ?>" class="dropdown-menu app_statuses">
 				    <!-- <li><a data-status="Approved" href="javascript:void(0);">Approved</a></li>
@@ -61,7 +71,7 @@ $the_query = new WP_Query( $args ); ?>
 			</td>
 
 			<td>
-				<input id="forward_application" type="text" name="forward_to"><button id="forward_application_btn">Submit</button>
+				<form class="forward_application"><input type="hidden" name="job_title" value="<?php echo $job_title; ?>"><input type="hidden" name="full_name" value="<?php echo $full_name; ?>"><input type="hidden" name="email" value="<?php echo $email; ?>"><input type="hidden" name="location" value="<?php echo $location; ?>"><input type="hidden" name="cover_letter" value="<?php echo $cover_letter; ?>"><input type="hidden" name="resume" value="<?php echo $attachment_path; ?>"><input id="forward_application" type="text" name="forward_to"><button id="forward_application_btn">Submit</button></form>
 			</td>
 
 		</tr>
@@ -72,10 +82,10 @@ $the_query = new WP_Query( $args ); ?>
 		      <!-- Modal content-->
 		      <div class="modal-content">
 		        <div class="modal-header">
-		          <button type="button" class="close" data-dismiss="modal">&times;</button>	<h4><?php echo get_post_meta(get_the_ID(), "Full Name", true); ?> - Cover Letter</h4>		          
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>	<h4><?php echo $full_name; ?> - Cover Letter</h4>		          
 		        </div>
 		        <div class="modal-body">
-		          <?php echo get_the_content(); ?>
+		          <?php echo $cover_letter; ?>
 		        </div>
 		        <div class="modal-footer">
 		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

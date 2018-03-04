@@ -513,7 +513,6 @@ left: 0;
 }
 
 
-
 @media screen and (max-width:1500px) {
 	
 }
@@ -1873,6 +1872,11 @@ h3.red-title {
 	display: inline-block;
 	vertical-align: top;
 }
+.filter_by_tag_cloud {
+	display: inline;
+    text-align: left;
+    padding-left: 0;
+}
 .job_filters {
 	background: transparent;
 }
@@ -1884,7 +1888,7 @@ h3.red-title {
     margin-bottom: 30px;
 }
 .filter_by_tag_cloud {
-	padding-left: 10px;
+
 }
 .fbc_label {
 	padding: 10px 15px 10px 0px;
@@ -1892,6 +1896,9 @@ h3.red-title {
 	color: #a00924;
 	font-weight: bold;
 	font-size: 18px;
+	display: inline;
+    float: left;
+    margin-right: 10px;
 }
 .job_filters .search_jobs .filter_by_tag a {
 	border: 2px solid #2e2e2e;
@@ -1977,6 +1984,11 @@ h3.red-title {
 .single_job_listing .job-listing-meta li {
 	display: block;
 	float: none;
+}
+.job_filters .search_jobs .filter_by_tag a {
+	padding: 3px 5px;
+    display: inline-block;
+    margin: 3px;
 }
 table.job-listing-meta tr {
 	border: 0;
@@ -2181,9 +2193,9 @@ table.table-sort td {
 .fieldset-company_logo {
 	display: none;
 }
-/*.page-id-51104 .job_position_filled {
+.page-id-51104 .job_position_filled {
 	display: none;
-}*/
+}
 ul.job_listings li.job_listing.job_position_filled a {
 	opacity: 1;
 }
@@ -2283,6 +2295,15 @@ input[name="submit_job"] {
 .table-sort tbody tr:nth-child(1) {
 	display: none;
 }
+
+#nav-menu-item-51795 .second .inner ul {
+    width: 140px !important;
+}
+
+.job_description ul, .job_description ul li {
+	color: #636363;
+}
+
 
 /* new clearfix */
 .clearfix:after {

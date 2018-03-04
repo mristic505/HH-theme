@@ -253,7 +253,7 @@ if(isset($qode_options['paspartu']) && $qode_options['paspartu'] == 'yes'){?>
 </div> <!-- close div.wrapper_inner  -->
 </div> <!-- close div.wrapper -->
 <?php wp_footer(); ?>
-<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/themes/brick-child/js/myscript.js"></script>
+<script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/themes/brick-child/js/myscript.js?ver=1.0.0"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {	
 	$('.post_excerpt').html(function(index,html){
